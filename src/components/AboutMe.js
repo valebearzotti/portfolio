@@ -37,7 +37,7 @@ function AboutMe() {
                     I'm an Engineering student, passionate about coding 
                     and designing digital solutions.<br></br>
                     Creative, hard-working and always trying my best.<br></br>
-                    I'm also a piano player, puzzle solver and a big F1 fan.
+                    I'm also a piano player, art enthusiast and a big F1 fan.
                 </AboutContent>
                 <Button href="#">LinkedIn</Button>
             </RightContent>
