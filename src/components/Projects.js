@@ -1,0 +1,33 @@
+import React from 'react'
+import styled from 'styled-components'
+import { LeftContent, WorkTitle, ProjectsContent, Illustration, Button, Dots } from '../styles/Home.styled'
+import dots from '../assets/dots.svg'
+import rectangle from '../assets/rectangle.svg'
+
+function Projects() {
+    return (
+        <Container>
+            <Dots src={dots}/>
+            <LeftContent>
+                <WorkTitle>
+                    Projects
+                </WorkTitle>
+                <ProjectsContent>
+                    I enjoy coding in my spare time.
+                </ProjectsContent>
+                <Button href="#">GitHub</Button>
+            </LeftContent>
+            <Illustration src={rectangle} />
+        </Container>
+    )
+}
+
+const Container = styled.div`
+    display: flex;
+    background-color: #13294B;
+    height: 100vh;
+    width: auto;
+    padding: 0px 250px;
+`
+
+export default Projects
