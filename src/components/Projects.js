@@ -13,7 +13,7 @@ function Projects() {
                     Projects
                 </WorkTitle>
                 <ProjectsContent>
-                    I enjoy coding in my spare time.
+                    Constantly improving and learning new stuff.
                 </ProjectsContent>
                 <Button href="#">GitHub</Button>
             </LeftContent>
