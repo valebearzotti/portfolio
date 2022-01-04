@@ -1,4 +1,4 @@
-import styled, {createGlobalStyle} from 'styled-components'
+import styled, {createGlobalStyle, keyframes} from 'styled-components'
 import './styles.css'
 
 export const GlobalStyle = createGlobalStyle`
@@ -8,9 +8,12 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: 'Poppins', 'sans-serif';
     }
+    html {
+        scroll-behavior: smooth;
+    }
 `
 
-export const NavItem = styled.div`
+export const NavItem = styled.a`
     margin-top: auto;
     margin-bottom: auto;
     &:nth-child(1){
@@ -20,6 +23,7 @@ export const NavItem = styled.div`
         margin-right: auto;
         padding-left: 0;
     }
+    text-decoration: none;
     color: #F9F3EF;
     padding-left: 50px;
     cursor: pointer;
@@ -50,10 +54,24 @@ export const RightContent = styled.div`
     margin-top: 160px;
 `
 
+const appear = keyframes`
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+`
+
 export const MainTitle = styled.h1`
     margin-right: auto;
     margin-bottom: 0;
     margin-top: 50px;
+    opacity: 0;
+    animation: 2s ${appear} forwards .5s;
+    animation-iteration-count: 1;
     &:nth-child(2){
         margin-top: 0;
         z-index: 100;
@@ -75,6 +93,9 @@ export const Subtitle = styled.h2`
     color: #F9F3EF;
     font-size: 28px;
     font-weight: 400;
+    opacity: 0;
+    animation: 2s ${appear} forwards 1s;
+    animation-iteration-count: 1;
     &::selection {
         background: none;
     }
@@ -83,6 +104,7 @@ export const Subtitle = styled.h2`
     }
     cursor: default;
 `
+
 
 export const BehindBlock = styled.span`
     position: relative;
@@ -96,6 +118,13 @@ export const BehindBlock = styled.span`
         border-radius: 2px;
         padding: 12px;
         z-index: -1;
+        transition: all .2s ease-in-out;
+    }
+    &:hover{
+        &::after{
+            padding: 50px 12px 9px 32px;
+            top: 10%;
+        }
     }
     &::selection {
         background: none;
@@ -105,16 +134,26 @@ export const BehindBlock = styled.span`
     }
 `
 
+const translate = keyframes`
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+  
+`
+
 export const Scroll = styled.img`
     margin-right: auto;
     margin-top: 30px;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    &:hover{
-        transform: translateY(-10px);
-    }
+    cursor: default;
+    opacity: 0;
+    animation: 2s ${appear} forwards 1.5s, 3s ${translate} infinite 4s;
 `
-
 
 export const Illustration = styled.img`
     margin-left: auto;

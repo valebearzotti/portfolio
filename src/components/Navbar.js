@@ -8,16 +8,16 @@ function Navbar() {
             <NavItem>
                 Valentina
             </NavItem>
-            <NavItem>
+            <NavItem href="#work">
                 Work
             </NavItem>
-            <NavItem>
+            <NavItem href="#projects">
                 Projects
             </NavItem>
-            <NavItem>
+            <NavItem href="#aboutme">
                 About me
             </NavItem>
-            <NavItem>
+            <NavItem href="#getintouch">
                 Get in touch
             </NavItem>
         </Container>

@@ -6,7 +6,7 @@ import laptop from '../assets/laptop.svg'
 
 function Work() {
     return (
-        <Container>
+        <Container id="work">
             <Bubbles src={bubbles}/>
             <LeftContent>
                 <WorkTitle>

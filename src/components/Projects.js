@@ -6,7 +6,7 @@ import rectangle from '../assets/rectangle.svg'
 
 function Projects() {
     return (
-        <Container>
+        <Container id="projects">
             <Dots src={dots}/>
             <LeftContent>
                 <WorkTitle>

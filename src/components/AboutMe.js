@@ -8,7 +8,7 @@ import graduation from '../assets/graduation.svg'
 
 function AboutMe() {
     return (
-        <Container>
+        <Container id="aboutme">
             <LeftContent>
                 <Skills>
                     <Skill>
