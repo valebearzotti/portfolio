@@ -7,7 +7,7 @@ import mid from '../assets/centermountains.svg'
 
 function LetsTalk() {
     return (
-        <Container>
+        <Container id="getintouch">
             <CenterContent>
                 <TalkTitle>
                     Let's talk

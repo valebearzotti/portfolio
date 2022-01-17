@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Illustration, LeftContent, MainTitle, Subtitle, Scroll, BehindBlock } from '../styles/Home.styled'
+import { Illustration, LeftContent, MainTitle, Subtitle, Scroll, BehindBlock, RightContent } from '../styles/Home.styled'
 import ill from '../assets/illustration.svg'
 import scroll from '../assets/scroll.svg'
+import Mountain from './Mountain'
 
 function HeroContainer() {
     return (
@@ -19,7 +20,11 @@ function HeroContainer() {
                 </Subtitle>
                 <Scroll src={scroll}/>
             </LeftContent>
-            <Illustration src={ill}/>
+            <RightContent>
+                <Mountain />
+            </RightContent>
+            
+            {/* <Illustration src={ill}/> */}
         </Container>
     )
 }
@@ -30,6 +35,9 @@ const Container = styled.div`
     height: 100vh;
     width: auto;
     padding: 0px 250px;
+    @media (max-width: 1366px){
+        padding: 0 150px;
+    }
 `
 
 export default HeroContainer

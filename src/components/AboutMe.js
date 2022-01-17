@@ -8,7 +8,7 @@ import graduation from '../assets/graduation.svg'
 
 function AboutMe() {
     return (
-        <Container>
+        <Container id="aboutme">
             <LeftContent>
                 <Skills>
                     <Skill>
@@ -37,7 +37,7 @@ function AboutMe() {
                     I'm an Engineering student, passionate about coding 
                     and designing digital solutions.<br></br>
                     Creative, hard-working and always trying my best.<br></br>
-                    I'm also a piano player, puzzle solver and a big F1 fan.
+                    I'm also a piano player, art enthusiast and a big F1 fan.
                 </AboutContent>
                 <Button href="#">LinkedIn</Button>
             </RightContent>
@@ -51,6 +51,9 @@ const Container = styled.div`
     height: 100vh;
     width: auto;
     padding: 0px 250px;
+    @media (max-width: 1366px){
+        padding: 0 150px;
+    }
 `
 
 export default AboutMe

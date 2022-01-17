@@ -8,16 +8,16 @@ function Navbar() {
             <NavItem>
                 Valentina
             </NavItem>
-            <NavItem>
+            <NavItem href="#work">
                 Work
             </NavItem>
-            <NavItem>
+            <NavItem href="#projects">
                 Projects
             </NavItem>
-            <NavItem>
+            <NavItem href="#aboutme">
                 About me
             </NavItem>
-            <NavItem>
+            <NavItem href="#getintouch">
                 Get in touch
             </NavItem>
         </Container>
@@ -31,6 +31,10 @@ const Container = styled.div`
     padding-left: 250px;
     padding-right: 250px;
     height: 80px;
+    @media (max-width: 1366px){
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 `
 
 export default Navbar

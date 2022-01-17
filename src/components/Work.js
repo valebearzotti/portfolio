@@ -6,7 +6,7 @@ import laptop from '../assets/laptop.svg'
 
 function Work() {
     return (
-        <Container>
+        <Container id="work">
             <Bubbles src={bubbles}/>
             <LeftContent>
                 <WorkTitle>
@@ -28,6 +28,9 @@ const Container = styled.div`
     height: 100vh;
     width: auto;
     padding: 0px 250px;
+    @media (max-width: 1366px){
+        padding: 0 150px;
+    }
 `
 
 export default Work
