@@ -44,6 +44,9 @@ export const LeftContent = styled.div`
     flex-direction: column;
     z-index: 100;
     margin-top: 160px;
+    @media (max-width: 1366px){
+        margin-top: 80px;
+    }
 `
 
 export const RightContent = styled.div`
@@ -52,6 +55,9 @@ export const RightContent = styled.div`
     margin-left: auto;
     z-index: 100;
     margin-top: 160px;
+    @media (max-width: 1366px){
+        margin-top: 80px;
+    }
 `
 
 const appear = keyframes`
@@ -103,6 +109,9 @@ export const Subtitle = styled.h2`
         background: none;
     }
     cursor: default;
+    @media (max-width: 1366px){
+        font-size: 24px;
+    }
 `
 
 
@@ -153,6 +162,12 @@ export const Scroll = styled.img`
     cursor: default;
     opacity: 0;
     animation: 2s ${appear} forwards 1.5s, 3s ${translate} infinite 4s;
+    &::selection {
+        background: none;
+    }
+    &::-moz-selection{
+        background: none;
+    }
 `
 
 export const Illustration = styled.img`
@@ -160,12 +175,18 @@ export const Illustration = styled.img`
     width: auto;
     height: 540px;
     margin-top: 140px;
+    @media (max-width: 1366px){
+        height: 340px;
+    }
 `
 
 export const Bubbles = styled.img`
     position: absolute;
     left: 30px;
     margin-top: 30px;
+    @media (max-width: 1366px){
+        height: 15%;
+    }
 `
 
 export const Dots = styled.img`
@@ -192,6 +213,9 @@ export const WorkTitle = styled.h1`
         background: none;
     }
     cursor: default;
+    @media (max-width: 1366px){
+        font-size: 72px;
+    }
 `
 
 export const WorkContent = styled.h6`
@@ -208,6 +232,9 @@ export const WorkContent = styled.h6`
         background: none;
     }
     cursor: default;
+    @media (max-width: 1366px){
+        font-size: 24px;
+    }
 `
 
 export const ProjectsContent = styled.h6`
@@ -224,6 +251,9 @@ export const ProjectsContent = styled.h6`
         background: none;
     }
     cursor: default;
+    @media (max-width: 1366px){
+        font-size: 24px;
+    }
 `
 
 export const AboutContent = styled.h6`
@@ -240,6 +270,10 @@ export const AboutContent = styled.h6`
         background: none;
     }
     cursor: default;
+    @media (max-width: 1366px){
+        font-size: 24px;
+        width: 430px;
+    }
 `
 
 export const Button = styled.a`
@@ -254,6 +288,9 @@ export const Laptop = styled.img`
     margin-left: auto;
     width: 780px;
     height: auto;
+    @media (max-width: 1366px){
+        width: 580px;
+    }
 `
 
 export const Skill = styled.div`

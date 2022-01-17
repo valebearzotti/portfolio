@@ -46,15 +46,26 @@ const MountOne = styled.img`
     position: absolute;
     left: 100px;
     top: 29px;
+    @media (max-width: 1366px){
+        left: 90px;
+        top: 21px;
+    }
 `
 const MountTwo = styled.img`
     animation: 4s ${slideright} infinite 2s;
     position: absolute;
     right: 120px;
     top: 100px;
+    @media (max-width: 1366px){
+        right: 130px;
+        top: 92px;
+    }
 `
 const Back = styled.img`
-    
+    @media (max-width: 1366px){
+        width: 95%;
+        height: auto;
+    }
 `
 
 export default Mountain
