@@ -335,6 +335,9 @@ export const CenterContent = styled.div`
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    @media (max-width: 1366px){
+        margin-top: 60px;
+    }
 `
 
 export const TalkContent = styled.div`
@@ -351,6 +354,10 @@ export const TalkContent = styled.div`
         background: none;
     }
     cursor: default;
+    @media (max-width: 1366px){
+        font-size: 24px;
+        width: fit-content;
+    }
 `
 
 export const TalkButton = styled.a`
@@ -372,6 +379,9 @@ export const LeftMountains = styled.img`
     width: 170px;
     height: auto;
     margin-top: auto;
+    @media (max-width: 1366px){
+        width: 90px;
+    }
 `
 
 export const RightMountains = styled.img`
@@ -379,6 +389,9 @@ export const RightMountains = styled.img`
     width: 160px;
     height: auto;
     margin-top: auto;
+    @media (max-width: 1366px){
+        width: 80px;
+    }
 `
 
 export const MidMountains = styled.img`
@@ -387,6 +400,9 @@ export const MidMountains = styled.img`
     width: 540px;
     height: auto;
     margin-top: auto;
+    @media (max-width: 1366px){
+        width: 340px;
+    }
 `
 
 export const Mountains = styled.div`
